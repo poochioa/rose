@@ -1,0 +1,54 @@
+/* =============================================================================
+ * Template/index.css
+ *
+ * ------------------------------------------------------------
+ * Copyright 2012 Exacloud, Inc.
+ * http://www.exacloud.cn/
+ * =========================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#l2 {
+    width: 100%;
+}
+
+#btn-previous {
+    width: 44px;
+    position: absolute;
+    left: 33.645833%;
+    top: 62.321429%;
+    cursor: pointer;
+}
+
+#btn-play {
+    width: 44px;
+    position: absolute;
+    left: 47.708333%;
+    top: 61.25%;
+    cursor: pointer;
+}
+
+#btn-next {
+    width: 44px;
+    position: absolute;
+    right: 33.645833%;
+    top: 62.321429%;
+    cursor: pointer;
+}
+
+#popup {
+    width: 40%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
