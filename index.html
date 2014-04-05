@@ -8,21 +8,44 @@
         <script src="lib/jquery-1.11.0.min.js"></script>
         <script src="lib/modal/jquery.modal.js"></script>
         <link href="lib/modal/jquery.modal.css" rel="stylesheet" />
+        <script type="text/javascript" src="lib/flowplayer/flowplayer.js"></script>
+        <link rel="stylesheet" type="text/css" href="lib/flowplayer/skin/all-skins.css">
+        <script type="text/javascript" src="lib/jcarousellite_1.0.1.js"></script>
         <!-- Application -->
         <script src="index.js"></script>
         <link href="index.css" rel="stylesheet" />
     </head>
     <body>
+        <!-- layer 2 -->
         <img id="l2" src="img/l2.png"/>
-        <!-- control buttons -->
-        <img id="btn-previous" src="img/btn-previous.png">
-        <img id="btn-play" src="img/btn-play.png">
-        <img id="btn-next" src="img/btn-next.png">
-        <!-- video popup -->
-        <div id="popup" style="display:none;">
-            <p>
-                Hello World!
-            </p>
+        <!-- carousel -->
+        <div id="carousel">
+            <div class="jcarousel">
+                <ul>
+                    <li id="v-1" >
+                        <img class="carousel_img" src="img/i-1.png" alt="cover_1">
+                    </li>
+                    <li id="v-2">
+                        <img class="carousel_img" src="img/i-2.png" alt="cover_2">
+                    </li>
+                    <li id="v-3">
+                        <img class="carousel_img" src="img/i-3.png" alt="cover_3">
+                    </li>
+                    <li id="v-4">
+                        <img class="carousel_img" src="img/i-4.png" alt="cover_4">
+                    </li>
+                </ul>
+            </div>
         </div>
+        <!-- control buttons -->
+        <img id="btn-previous" class = "btn" src="img/btn-previous.png">
+        <img id="btn-play" class = "btn" src="img/btn-play.png">
+        <img id="btn-next" class = "btn" src="img/btn-next.png">
+        <!-- video popup -->
+        <div id="popup">
+            <div id="player"></div>
+            <img id="brand" src="img/brand.png" />
+        </div>
+
     </body>
 </html>

@@ -19,36 +19,40 @@ body {
 }
 
 #l2 {
+    position: relative;
     width: 100%;
 }
 
-#btn-previous {
-    width: 44px;
+#carousel {
     position: absolute;
-    left: 33.645833%;
-    top: 62.321429%;
-    cursor: pointer;
+    z-index: -1;
 }
 
-#btn-play {
-    width: 44px;
-    position: absolute;
-    left: 47.708333%;
-    top: 61.25%;
-    cursor: pointer;
+.carousel_img {
+    width: 295px;
+    height: 171px;
 }
 
-#btn-next {
-    width: 44px;
+.btn {
     position: absolute;
-    right: 33.645833%;
-    top: 62.321429%;
     cursor: pointer;
 }
 
 #popup {
-    width: 40%;
-    height: 30%;
+    display: none;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.modal a.close-modal {
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+}
+
+#brand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
