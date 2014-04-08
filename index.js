@@ -7,7 +7,7 @@
 * =========================================================================== */
 
 // ================= GLOBAL VARIABLES ==========================================
-var CAROUSEL, BTN_PREV, BTN_PLAY, BTN_NEXT, POPUP, PLAYER;
+var CAROUSEL, BTN_PREV, BTN_PLAY, BTN_NEXT, POPUP, PLAYER, BRAND, BANNER;
 
 var CAROUSEL_LEFT = 325, CAROUSEL_TOP = 255;
 var CAROUSEL_IMG_WIDTH = 310, CAROUSEL_IMG_HEIGHT = 172;
@@ -16,6 +16,7 @@ var BTN_PLAY_TOP = 322, BTN_PLAY_LEFT = 455;
 var BTN_WIDTH = 44;
 var POPUP_LEFT = 0, POPUP_RIGHT = 0, POPUP_WIDTH = 700, POPUP_HEIGHT = 370;
 var BRAND_HEIGHT = 70;
+var BANNER_TOP = 510;
 var CURRENT_IMG = 'v-1';
 
 // ================= INIT FUNCTIONS ============================================
@@ -27,6 +28,7 @@ $(function() {
     POPUP = $('#popup');
     PLAYER = $('#player');
     BRAND = $('#brand');
+    BANNER = $('#banner');
 
     // event handlers ------------------------------------------------------------------------------
     $(window).resize(function() {
@@ -59,6 +61,9 @@ $(function() {
         });
         BRAND.css({
             height : BRAND_HEIGHT * r
+        });
+        BANNER.css({
+            top : BANNER_TOP * r
         });
 
     });

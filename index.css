@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow:hidden;
     background-image: url("img/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,8 +18,13 @@ body {
     -o-background-size: cover;
 }
 
-#l2 {
+#l2_1 {
     position: relative;
+    width: 100%;
+    z-index: -2;
+}
+#banner {
+    position: absolute;
     width: 100%;
     z-index: -2;
 }
