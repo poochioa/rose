@@ -9,13 +9,13 @@
 // ================= GLOBAL VARIABLES ==========================================
 var CAROUSEL, BTN_PREV, BTN_PLAY, BTN_NEXT, POPUP, PLAYER;
 
-var CAROUSEL_TOP = 302, CAROUSEL_LEFT = 372;
-var CAROUSEL_IMG_WIDTH = 221, CAROUSEL_IMG_HEIGHT = 128;
-var BTN_PREV_NEXT_TOP = 350, BTN_PREV_NEXT_LEFT_RIGHT = 322;
-var BTN_PLAY_TOP = 343, BTN_PLAY_LEFT = 458;
+var CAROUSEL_LEFT = 325, CAROUSEL_TOP = 255;
+var CAROUSEL_IMG_WIDTH = 310, CAROUSEL_IMG_HEIGHT = 172;
+var BTN_PREV_NEXT_TOP = 322, BTN_PREV_NEXT_LEFT_RIGHT = 270;
+var BTN_PLAY_TOP = 322, BTN_PLAY_LEFT = 455;
 var BTN_WIDTH = 44;
-var POPUP_LEFT = 0, POPUP_RIGHT = 0, POPUP_WIDTH = 700, POPUP_HEIGHT = 350;
-
+var POPUP_LEFT = 0, POPUP_RIGHT = 0, POPUP_WIDTH = 700, POPUP_HEIGHT = 370;
+var BRAND_HEIGHT = 70;
 var CURRENT_IMG = 'v-1';
 
 // ================= INIT FUNCTIONS ============================================
@@ -26,6 +26,7 @@ $(function() {
     BTN_NEXT = $('#btn-next');
     POPUP = $('#popup');
     PLAYER = $('#player');
+    BRAND = $('#brand');
 
     // event handlers ------------------------------------------------------------------------------
     $(window).resize(function() {
@@ -56,6 +57,9 @@ $(function() {
             width : POPUP_WIDTH * r,
             height : POPUP_HEIGHT * r
         });
+        BRAND.css({
+            height : BRAND_HEIGHT * r
+        });
 
     });
 
@@ -85,7 +89,6 @@ $(function() {
         visible : 1,
         afterEnd : function(a) {
             CURRENT_IMG = a[0].id;
-            console.log(CURRENT_IMG);
         }
     });
     $(window).resize();

@@ -21,6 +21,7 @@ body {
 #l2 {
     position: relative;
     width: 100%;
+    z-index: -2;
 }
 
 #carousel {
@@ -29,8 +30,8 @@ body {
 }
 
 .carousel_img {
-    width: 295px;
-    height: 171px;
+    width: 930px;
+    height: 516px;
 }
 
 .btn {
