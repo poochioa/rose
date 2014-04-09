@@ -11,7 +11,7 @@ var CAROUSEL_IMG_WIDTH = 310, CAROUSEL_IMG_HEIGHT = 172;
 var BTN_PREV_NEXT_TOP = 322, BTN_PREV_NEXT_LEFT_RIGHT = 270;
 var BTN_PLAY_TOP = 322, BTN_PLAY_LEFT = 455;
 var BTN_WIDTH = 44;
-var POPUP_LEFT = 0, POPUP_RIGHT = 0, POPUP_WIDTH = 700, POPUP_HEIGHT = 370;
+var POPUP_WIDTH = 600, POPUP_HEIGHT = 420;
 var BRAND_HEIGHT = 70;
 var BANNER_TOP = 510;
 var CURRENT_IMG = 'v-1';
@@ -73,7 +73,7 @@ $(function() {
     });
 
     POPUP.on($.modal.OPEN, function() {
-        PLAYER.html('<div data-ratio="0.4167" id="video" class="flowplayer main minimalist"><video autoplay><source type="video/mp4" src="vid/{0}.mp4"></video></div>'.format(CURRENT_IMG));
+        PLAYER.html('<div data-ratio="0.591" id="video" class="flowplayer fixed-controls no-mute no-time no-volume minimalist"><video autoplay><source type="video/mp4" src="vid/{0}.mp4"></video></div>'.format(CURRENT_IMG));
         $('#video').flowplayer({
             fullscreen : false
         });

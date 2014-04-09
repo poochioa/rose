@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow:hidden;
+    overflow: hidden;
     background-image: url("img/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,6 +44,7 @@ body {
 #popup {
     display: none;
     background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 50px;
 }
 
 .modal a.close-modal {
@@ -57,5 +58,9 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 7px;
+}
+
+.fp-embed, .fp-help {
+    display: none
 }
